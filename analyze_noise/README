@@ -1,0 +1,14 @@
+Script for summarizing and plotting the results of the selfish detour benchmark.
+
+This script doesn't have a real command-line interface. It's intended to be
+modified directly to suit your needs.
+
+= Default Usage =
+./analyze.py
+By default the script will read whatever files are in the folder named_results/
+and output pdf plots of them to "plots/". File names will be used as titles in
+the output plots.
+
+= Other Usage =
+I recommend looking at main() in analyze.py to see what gets called when. After
+that you may want to play around with some of the commented-out lines.
