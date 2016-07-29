@@ -1,0 +1,25 @@
+A basic hello-world utility that can test multiple output methods.
+
+= hello =
+Usage: ./hello [-c, -n, -f]
+Prints hello to the desired output method.
+  -c
+    Console output (stdout)
+  -n
+    Network output (port 12345)
+    Use netcat to retrieve "nc  IP:12345"
+  -f
+    (DEFAULT) File output (hello.out).
+
+= hello_pth =
+Usage ./hello [-c, -n, -f]
+Prints hello on multiple threads after constant work (currently ~20s of work).
+Useful for testing multi-threaded features (for instance, rumprun takes
+Nthread*20s to run because it doesn't support multiple cores).
+
+= *_rr =
+Example:
+  $ make hello_rr
+  $ ./rr_run hello.rr -c
+
+Builds the corresponding test for rumprun (run with rr_run.sh).
