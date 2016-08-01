@@ -17,3 +17,11 @@ all interruptions.
 = Building =
 make detour     - Builds benchmark for native platform
 make detour.rr  - Builds for rumprun
+
+= Notes =
+Derived from the netgauge benchmark suite:
+  http://htor.inf.ethz.ch/research/netgauge/
+
+I basically just extracted out the selfish-detour bit and put a simpler
+front-end on it. This makes it easier to port, cross-compile, and run on weird
+systems.

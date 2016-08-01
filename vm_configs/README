@@ -1,0 +1,11 @@
+Common VM configurations and launch scripts.
+
+*.cfg - Xen vm configurations. Modify to match your own VMs
+*.lxc - LXC container config scripts
+
+MAC_INFO -
+  MAC->IP mappings that are useful for Xen networking. Use libvirt networking
+  utilities to set up DHCP with static MAC-IP assignments to have predictable
+  per-VM IPs.
+  Guide: http://serverfault.com/questions/627238/kvm-libvirt-how-to-configure-static-guest-ip-addresses-on-the-virtualisation-ho
+

@@ -1,0 +1,13 @@
+Scripts and tools for working with rumprun.
+
+= rumprun =
+Modified rumprun script that supports Xen backend arguments.
+
+= rr_run.sh =
+Script to encapsulate common rumprun arguments. Modify as needed.
+
+Usage:
+  ./rr_run.sh app.rr [ARGS]
+
+Example:
+  ./rr_run.sh hello_world.rr -f

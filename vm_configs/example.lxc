@@ -1,0 +1,4 @@
+lxc.utsname = p0
+lxc.cgroup.cpuset.cpus=4-13
+lxc.cgroup.cpuset.mems=0
+lxc.cgroup.memory.limit_in_bytes=8G

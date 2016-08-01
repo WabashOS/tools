@@ -22,4 +22,4 @@ Example:
   $ make hello_rr
   $ ./rr_run hello.rr -c
 
-Builds the corresponding test for rumprun (run with rr_run.sh).
+Builds the corresponding test for rumprun (run with tools/rumprun/rr_run.sh).
