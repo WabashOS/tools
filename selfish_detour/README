@@ -1,0 +1,19 @@
+Selfish detour benchmark
+
+Measures noise on a system by polling the RDTSC instruction. Output is a CSV of
+all interruptions.
+
+= Usage =
+./detour [-n NITER, -o OUTPUT_TYPE]
+  -n NITER
+    Number of detours to record. Runtime depends on this and the rate of detours.
+
+  -o OUTPUT_TYPE
+    Specifies an output type.
+      f - file (./results.out)
+      n - Network (socket on port 12345)
+      c - Console (stdout)
+
+= Building =
+make detour     - Builds benchmark for native platform
+make detour.rr  - Builds for rumprun
