@@ -3,7 +3,7 @@
 # Example: ./rr_run.sh hello.rr -f
 
 # Minimal
-#rumprun -S xen -g 'tsc_mode="native";cpus="3"' -id $@
+rumprun -S xen -g 'tsc_mode="native";cpus="3"' -id $@
 
 # Just File.
 # File must be valid, formatted image:
@@ -13,7 +13,7 @@
 #rumprun -S xen -g 'tsc_mode="native";cpus="2-3"' -b ~/data/os_images/detour.img -id $@
 
 # Just Networking
-rumprun -S xen -g 'tsc_mode="native";cpus="2-3"' -id -I if,xenif,'bridge=virbr0,mac=00:16:3e:00:00:02' -W if,inet,dhcp $@
+#rumprun -S xen -g 'tsc_mode="native";cpus="2-3"' -id -I if,xenif,'bridge=virbr0,mac=00:16:3e:00:00:02' -W if,inet,dhcp $@
 
 # Full Networking/File
 #rumprun -S xen -g 'tsc_mode="native";cpus="2-3"' -b ~/data/os_images/detour.img -id -I if,xenif,'bridge=virbr0,mac=00:16:3e:00:00:02' -W if,inet,dhcp $@
